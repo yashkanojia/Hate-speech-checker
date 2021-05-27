@@ -4,3 +4,5 @@ In order to run this project you have to install Django or create the environmen
 Then run the following command "python manage.py runserver".
 This will open the tab in your browser with localhost running.
 There you will see the interface.
+There you can put the link of the tweet which you want to analyse and then click on submit.
+In result,this will classify the tweet as "HATE" or "NOT HATE".
