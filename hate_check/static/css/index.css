@@ -1,0 +1,76 @@
+
+body{
+    background:linear-gradient(to right,transparent,black);
+}
+
+#back_ground{
+    background: 
+    url("/static/images/t1.png");
+    border: white 2px solid;
+    height: 800px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    margin-top: 100px;
+    border: 20px black;
+    color: aliceblue;
+    text-align: center;
+    
+}
+h1{
+    font-size: 80px;
+    text-align: center;
+    text-shadow : 80px rgb(55, 55, 168) solid;
+    
+}
+ #back_ground #form{
+    align-content: center;
+    height: 38em;
+    width: 500px;
+    margin-left: 250px;
+    margin-top: 100px;
+    font-size: 0.5 em;
+}
+#back_ground #form #url{
+    width: 20em;
+    scroll-behavior: auto;
+    overflow:scroll;
+}
+#back_ground #form #tweet{
+    width: 30em;
+    scroll-behavior: auto;
+    overflow:scroll;
+    height: 25em;
+}
+#heading {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 
+    0 0 10px #fff, 
+    0 0 15px #0073e6, 
+    0 0 20px #0073e6,
+     0 0 25px #0073e6,
+      0 0 30px #0073e6,
+       0 0 35px #0073e6;
+       font-family: 'Brush Script MT', cursive;
+       animation: flicker 1.5s infinite alternate;  
+    
+}
+#about{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 2px 2px 2px 2px;
+    
+}
+#para{
+    color: brown;
+}
+#ai{
+    border: 2px black solid ;
+    border-radius: 4px;
+}
+#ins{
+    margin-top: 15px;
+    color: black;
+}

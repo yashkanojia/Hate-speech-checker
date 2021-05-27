@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hate_speech_checker</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+  <body>
+    {% block content %}
+    <div class="container-fluid" >
+    <h1 id="heading">Hate speech Checker</h1>
+    </div>
+
+    <div class="container" id="about">
+    <h3 id="heading">ABOUT</h3>  <br>
+    A hate crime is a prejudice-motivated crime which occurs when a perpetrator targets a victim because of their membership (or perceived membership) of a certain social group or race.<br>
+    Now a days there are increased instances of hate crime initiated through social media.<br>
+    We intend to find a way to reduce hateful content on social media platform and its outcomes.<br>
+    <img src="/static/images/b1.png" alt="loading images..." id="ai" style="margin-top: 2em;">
+    </div>
+
+    <div id="ins">
+      <p id="heading">Analyse your tweet below by pasting the tweet link from twitter : </p>
+    </div>
+    
+    <div id="back_ground" class="container-fluid">
+        Analyse the your tweet here
+        <form action="" method="POST">
+          {% csrf_token %}
+          <div class="form-group">
+          <label for="username">PLEASE ENTER THE URL</label>
+          <input type="text" name="username" placeholder="URL">
+        </div>
+          <input type="submit" name="Result" value="Result" class="btn btn-outline-primary">
+        </form>
+    </div>
+    <p id="para">{{username}}</p>
+
+    <footer class="page-footer font-small blue">
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://www.facebook.com/yash.kanojia.180">Yash kanojia</a>
+      </div>
+    </footer>
+    {% endblock %}
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
